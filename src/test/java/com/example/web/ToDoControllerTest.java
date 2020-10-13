@@ -41,7 +41,7 @@ public class ToDoControllerTest {
 	@Test
 	public void verifyAllToDoList() throws Exception {
 		mockMvc.perform(MockMvcRequestBuilders.get("/todo").accept(MediaType.APPLICATION_JSON))
-			.andExpect(jsonPath("$", hasSize(4))).andDo(print());
+			.andExpect(jsonPath("$", hasSize(5))).andDo(print());
 	}
 	
 	@Test
